@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Components</title>
+    <script src="react/react.development.js"></script>
+    <script src="react/react-dom.development.js"></script>
+    <script src="react/prop-types.js"></script>
+    <script src="react/babel.min.js"></script>
+  </head>
+  <body>
+ <div id="root"></div>
+ <script type="text/babel">
+  function Example(props) {
+    return(
+        <div>
+		<p> Functional Component (stateless) </p>
+        <p>{props.first_name}</p>
+        <p>{props.last_name}</p>
+        </div>
+    )}
+ReactDOM.render(<Example first_name="Ram" last_name="Mohan"/>, 
+document.getElementById('root'));
+ </script></body>
+</html>

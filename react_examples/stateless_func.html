@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Components</title>
+    <script src="react/react.development.js"></script>
+    <script src="react/react-dom.development.js"></script>
+    <script src="react/prop-types.js"></script>
+    <script src="react/babel.min.js"></script>
+  </head>
+  <body>
+ <div id="root"></div>
+ <script type="text/babel">
+  const Hello1=()=>{
+    const sayHi=(event)=>{
+	    alert('Hi, This is stateless(functional) component');
+	  };
+    return(
+	 <div>
+	 <button type="button" 
+		onClick={sayHi}>Say Hi</button>
+	 </div>
+	 );
+	}
+ReactDOM.render(<Hello1 />, document.getElementById('root'));
+ </script> </body>
+</html>

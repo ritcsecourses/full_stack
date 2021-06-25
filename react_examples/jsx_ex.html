@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <script src="react/react.development.js"></script>
+    <script src="react/react-dom.development.js"></script>
+    <script src="react/prop-types.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="react/babel.min.js"></script>
+  </head>
+  <body>
+     <div id="app"></div>
+        <script type="text/babel">
+        let element = <h1>Hello, <b>React</b>!</h1>;
+		console.log(element);
+		let age = 18;
+		let ageElement = <p>Age: {age}</p>;
+		ReactDOM.render(ageElement,document.getElementById('app'));      
+		/*ReactDOM.render(element,document.getElementById('app'));*/
+        </script>
+  </body>
+</html>

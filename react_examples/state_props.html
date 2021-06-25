@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Components</title>
+    <script src="react/react.development.js"></script>
+    <script src="react/react-dom.development.js"></script>
+    <script src="react/prop-types.js"></script>
+    <script src="react/babel.min.js"></script>
+  </head>
+  <body>
+ <div id="root"></div>
+ <script type="text/babel">
+ //State and Props used in stateful component
+ class StateAndProps extends React.Component {
+
+   constructor(props){
+
+       super(props);
+
+       this.state={
+
+       value: '50'
+
+       }
+
+   }
+
+   render(){
+
+      return (
+
+           <div>
+
+               <p>{this.state.value}</p>
+
+               <p>{this.props.value}</p>
+
+               </div>
+
+       )
+
+   }
+
+}
+ReactDOM.render(<StateAndProps />, document.getElementById('root'));
+ </script> </body>
+</html>
